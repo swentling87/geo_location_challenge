@@ -10,11 +10,12 @@
   .row
     .col-md-6.col-md-offset-1.locations.well
       .h2 All Locations
-      -@locations.limit(@locations.length - 1).each do |loc|
-        .ul
-          .li
-            .h4
-              #{loc.name}
-              %small.pull-right
-                .h6 Latitude: #{loc.latitude} Longitude: #{loc.longitude}
-            #{loc.address_1}
+      -if @locations.length > 1
+        -@locations.limit(@locations.length - 1).each do |loc|
+          .ul
+            .li
+              .h4
+                #{loc.name}
+                %small.pull-right
+                  .h6 Latitude: #{loc.latitude} Longitude: #{loc.longitude}
+              #{loc.address_1}

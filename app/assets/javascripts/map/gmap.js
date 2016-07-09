@@ -17,5 +17,13 @@ function initMap() {
   });
 }
 
-$(document).ready(initMap);
-$(document).on('page:load', initMap);
+function loadScript() {
+	console.log("map loading ...");
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCHe7C--iVaSJ9xPh_Qe9A7888_BgjUl28" +
+    '&callback=initMap';
+  document.body.appendChild(script);
+}
+$(document).ready(loadScript);
+$(document).on('page:load', loadScript);
