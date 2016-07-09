@@ -1,0 +1,35 @@
+
+.page-header h1 {
+  padding-left: 150px;
+  color: gray;
+}
+.main {
+  background-image: url(asset-path('vrv_bck.jpeg'));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 1000px;
+}
+
+.main-header {
+  color: white;
+  margin-top: 100px;
+  font-size: 5em;
+  margin-bottom: 50px;
+}
+
+.upload {
+  margin-top: 75px;
+  height: 150px;
+}
+
+.map-canvas {
+  height: 420px;
+  width: 520px;
+}
+
+.visual {
+  height: 380px;
+  width: 480px;
+}
