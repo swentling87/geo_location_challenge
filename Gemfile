@@ -25,6 +25,7 @@ gem 'turbolinks'
 gem 'bootstrap-sass'
 gem 'figaro'
 gem 'haml'
+gem 'gmaps4rails'
 
 group :test do
   gem 'simplecov', require: false
